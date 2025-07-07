@@ -1,0 +1,84 @@
+CREATE TABLE Aluno 
+( 
+ id_aluno INT PRIMARY KEY,  
+ idade INT,  
+ senha VARCHAR(50),  
+ email VARCHAR(50),  
+ nome VARCHAR(50),  
+ nivel INT,  
+ idResponsaveis INT,  
+); 
+
+CREATE TABLE Responsaveis 
+( 
+ email VARCHAR(50),  
+ senha VARCHAR(50),  
+ id_responsavel INT PRIMARY KEY,  
+ nome VARCHAR(50),  
+ idade INT,  
+); 
+
+CREATE TABLE questoes 
+( 
+ id_teste INT,  
+ enunciado VARCHAR(50),  
+ id_questoes INT PRIMARY KEY,  
+ tipo VARCHAR(50),  
+ dificuldade(nivel) INT,  
+ ordem INT,  
+ idteste INT,  
+); 
+
+CREATE TABLE teste 
+( 
+ titulo VARCHAR(50),  
+ descricao VARCHAR(50),  
+ id_teste INT PRIMARY KEY,  
+); 
+
+CREATE TABLE alternativa 
+( 
+ id_alternativa INT PRIMARY KEY,  
+ conteudo VARCHAR(50),  
+ correta VARCHAR(50),  
+ idquestoes INT,  
+); 
+
+CREATE TABLE resposta_aluno 
+( 
+ conteudo VARCHAR(50),  
+ id_resposta INT PRIMARY KEY,  
+ idAluno INT,  
+ idquestoes INT,  
+); 
+
+CREATE TABLE Temporizador 
+( 
+ id_tempo INT PRIMARY KEY,  
+ duracao INT,  
+ inicio(opc) INT,  
+ fim(opc) INT,  
+ ativo INT,  
+); 
+
+CREATE TABLE faz 
+( 
+ id_tempo INT PRIMARY KEY,  
+ id_responsavel INT PRIMARY KEY,  
+); 
+
+CREATE TABLE tem 
+( 
+ id_tempo INT PRIMARY KEY,  
+ id_aluno INT PRIMARY KEY,  
+); 
+
+ALTER TABLE Aluno ADD FOREIGN KEY(idResponsaveis) REFERENCES Responsaveis (idResponsaveis)
+ALTER TABLE questoes ADD FOREIGN KEY(idteste) REFERENCES teste (idteste)
+ALTER TABLE alternativa ADD FOREIGN KEY(idquestoes) REFERENCES questoes (idquestoes)
+ALTER TABLE resposta_aluno ADD FOREIGN KEY(idAluno) REFERENCES Aluno (idAluno)
+ALTER TABLE resposta_aluno ADD FOREIGN KEY(idquestoes) REFERENCES questoes (idquestoes)
+ALTER TABLE faz ADD FOREIGN KEY(id_tempo) REFERENCES Temporizador (id_tempo)
+ALTER TABLE faz ADD FOREIGN KEY(id_responsavel) REFERENCES Responsaveis (id_responsavel)
+ALTER TABLE tem ADD FOREIGN KEY(id_tempo) REFERENCES Temporizador (id_tempo)
+ALTER TABLE tem ADD FOREIGN KEY(id_aluno) REFERENCES Aluno (id_aluno)
