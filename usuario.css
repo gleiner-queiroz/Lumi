@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", system-ui;
+  height: 17cm;
+  background-image: url(imagem/Fundo.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div, p, h2, h3{
+    color: white;
+}
+
+.voltar{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    height: 65px;
+    top: 0;
+    left: 5%;
+    right: 150%;
+    padding: 20px;
+
+    background-color: transparent;
+    border: none;
+
+}
+

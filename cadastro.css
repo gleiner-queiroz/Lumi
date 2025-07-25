@@ -1,0 +1,52 @@
+body {
+  background-size: cover;
+  background-image: url(imagem/Fundo.png);
+  padding: 0rem;
+  border: 0rem;
+  margin: 0rem;
+  display: flex; /* Adiciona Flexbox ao body */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Garante que o body tenha a altura da tela */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 430px;
+  height: 450px;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.26);
+  border-radius: 10px;
+  box-shadow: #000 0px 0px 10px;
+}
+h1 {
+  font-size: 2rem;
+}
+label{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 11rem;
+  font-size: 1.2rem;
+  margin: 16px;
+}
+input {
+  height: 20px;
+  border-radius: 5px;
+  border: black 1px solid;
+  padding-left: 1px;
+  font-size: 1.1rem;
+  padding-top: 0%;
+}
+button {
+  border-radius: 5px;
+  border: black 1px solid;
+  color: #000000;
+  font-size: 1.2rem;
+  margin-top: 16px;
+  margin: 16px;
+}

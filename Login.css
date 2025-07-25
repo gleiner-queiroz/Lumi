@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", system-ui;
+  background-image: url(imagem/Fundo.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+
+  color: white;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+/* Seção da tela de login */
+.screen {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Cartões (formulário e cadastro) */
+.card {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  color: white;
+}
+
+/* Grupos de campos do formulário */
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-size: 0.7rem;
+}
+
+.form-group input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-family: "Press Start 2P", system-ui;
+  background-color: #fff;
+}
+
+/* Botões */
+.btn {
+  background-color: #292929;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 0.65rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #020023;
+}
+
+/* Links */
+a {
+  color: var(--primary, #00ccff);
+  text-decoration: none;
+  font-size: 0.65rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Textos internos dos cards */
+.card p {
+  font-size: 0.65rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}

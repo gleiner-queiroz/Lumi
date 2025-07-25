@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", system-ui;
+  background-image: url(imagem/Fundo.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.o1,.o2,.o3{
+    size: 0;
+    top: 0;
+    right: 0;
+    padding: 0cm;
+}
+a {
+  pointer-events: all;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    height: 70px;
+    top: 0;
+    right: 0;
+    left: 85%;
+    padding: 20px;
+}
+.tempo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    height: 50px;
+    top: 0;
+    right: 45%;
+    padding: 20px;
+}
+.usuario{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    height: 65px;
+    top: 0;
+    left: 5%;
+    right: 90%;
+    padding: 20px;
+}

@@ -1,14 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
+    font-family: "Press Start 2P", system-ui;
     background-size: cover;
-    background-color: #B9CFFF;
+    background-image: url(imagem/Fundo.png);
     padding: 0;
     border: 0;
     margin: 0;
+    color: white;
     display: flex; /* Adiciona Flexbox ao body */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     height: 100vh; /* Garante que o body tenha a altura da tela */
 }
+
+h2{
+    padding: 20px;
+    top: 0;
+    right: 0;
+}
+
 .fundo{
     height: 100vh;
     width: 100vw;
@@ -17,4 +28,19 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+.voltar{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  height: 65px;
+  top: 0;
+  left: 5%;
+  right: 150%;
+  padding: 20px;
+
+  background-color: transparent;
+  border: none;
 }
