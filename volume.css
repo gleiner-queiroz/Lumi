@@ -8,10 +8,10 @@ body {
     border: 0;
     margin: 0;
     color: white;
-    display: flex; /* Adiciona Flexbox ao body */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100vh; /* Garante que o body tenha a altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
 }
 
 h2{
