@@ -15,11 +15,10 @@ body {
 
   color: white;
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
+  justify-content: center;
+  align-items: center; 
 }
 
-/* Seção da tela de login */
 .screen {
   display: flex;
   flex-direction: column;
@@ -37,7 +36,7 @@ body {
   color: white;
 }
 
-/* Grupos de campos do formulário */
+
 .form-group {
   margin-bottom: 1.5rem;
   display: flex;
@@ -77,7 +76,6 @@ body {
   background-color: #020023;
 }
 
-/* Links */
 a {
   color: var(--primary, #00ccff);
   text-decoration: none;
@@ -88,7 +86,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Textos internos dos cards */
 .card p {
   font-size: 0.65rem;
   margin-bottom: 1rem;
